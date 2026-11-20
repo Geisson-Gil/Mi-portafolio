@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Geisson Gil — Portafolio 2026</title>
+  <meta name="description" content="Portafolio 2026 de Geisson Gil, diseñador gráfico.">
+  <meta name="theme-color" content="#000314">
+  <link rel="icon" href="assets/logos/isotipo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Inter:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Geisson Gil — Inicio"><img src="assets/logos/isotipo.png" alt="Isotipo GG"></a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="nav"><span class="sr-only">Menú</span><span class="menu-toggle__bars" aria-hidden="true"></span></button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <span class="nav__indicator" aria-hidden="true"></span>
+      <a href="#home" data-route="home">Home</a>
+      <a href="#sobre-mi" data-route="sobre-mi">Sobre mí</a>
+      <a href="#proyectos" data-route="proyectos">Proyectos</a>
+      <a href="#habilidades" data-route="habilidades">Habilidades</a>
+      <a href="#contacto" data-route="contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+
+    <!-- 01 HOME (dos estados: E5) -->
+    <section class="page" data-page="home" aria-label="Inicio">
+      <div class="home" id="homeStage">
+        <div class="home__col">
+          <h1 class="home__title">PORTAFOLIO 2026</h1>
+          <div class="home__brand">
+            <img src="assets/logos/isotipo.png" alt="">
+            <p class="home__name">GEISON GIL</p>
+            <p class="home__role">DISEÑADOR GRÁFICO</p>
+          </div>
+          <p class="home__lead">La creatividad toma forma cuando las ideas encuentran su propósito.</p>
+          <a class="btn btn--orange" href="#proyectos">Explorar proyectos <svg class="arr" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></a>
+        </div>
+        <figure class="home__photo"><img src="assets/img/home.jpg" alt="Geisson Gil sentado en una silla, retrato de estudio"></figure>
+      </div>
+    </section>
+
+    <!-- 02 SOBRE MÍ -->
+    <section class="page" data-page="sobre-mi" aria-label="Sobre mí" hidden>
+      <div class="about">
+        <div class="about__text">
+          <p class="about__hi reveal">Me llamo...</p>
+          <h2 class="about__name reveal">Geisson Gil</h2>
+          <p class="about__p reveal">Soy estudiante de Diseño Gráfico y tecnólogo en Animación y Postproducción Audiovisual. Me apasiona la comunicación visual y la posibilidad de transformar ideas en piezas gráficas con identidad y propósito.<br>Me considero una persona curiosa, perseverante y comprometida. Disfruto aprender, asumir nuevos retos y desarrollar soluciones creativas que comuniquen de manera clara y efectiva.</p>
+          <a class="btn btn--ghost reveal" href="#contacto">Ver enlaces</a>
+        </div>
+        <figure class="about__photo reveal zoom"><img src="assets/img/sobre-mi.jpg" alt="Retrato de Geisson Gil con chaqueta de cuero y gafas rojas"></figure>
+      </div>
+    </section>
+
+    <!-- 03 PROYECTOS -->
+    <section class="page" data-page="proyectos" aria-label="Proyectos" hidden>
+      <div class="proj">
+        <h2 class="proj__title reveal">Proyectos</h2>
+        <div class="carousel" id="carousel" tabindex="0" aria-label="Carrusel de proyectos">
+          <ul class="carousel__track" id="projectList"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 HABILIDADES -->
+    <section class="page" data-page="habilidades" aria-label="Habilidades" hidden>
+      <div class="skills">
+        <h2 class="skills__title reveal">HERRAMIENTAS Y FORMACIÓN</h2>
+        <div class="skills__head reveal"><h3>Software que manejo</h3><p>DISEÑO · ANIMACIÓN · POSTPRODUCCIÓN</p></div>
+        <ul class="tools">
+          <li class="tool reveal"><img src="assets/icons/ai.png" alt=""><span class="tool__n">01</span><h4>Adobe Illustrator</h4><p>Diseño vectorial e ilustración.</p></li>
+          <li class="tool reveal"><img src="assets/icons/ps.png" alt=""><span class="tool__n">02</span><h4>Adobe Photoshop</h4><p>Edición y composición de imágenes.</p></li>
+          <li class="tool reveal"><img src="assets/icons/ae.png" alt=""><span class="tool__n">03</span><h4>Adobe After Effects</h4><p>Animación gráfica y postproducción audiovisual.</p></li>
+          <li class="tool reveal"><img src="assets/icons/blender.png" alt=""><span class="tool__n">04</span><h4>Blender</h4><p>Modelado, animación y creación 3D.</p></li>
+          <li class="tool reveal"><img src="assets/icons/figma.png" alt=""><span class="tool__n">05</span><h4>Figma</h4><p>Diseño de interfaces y prototipado.</p></li>
+          <li class="tool reveal"><img src="assets/icons/maya.png" alt=""><span class="tool__n">06</span><h4>Autodesk Maya</h4><p>Modelado, animación y producción 3D.</p></li>
+        </ul>
+        <div class="edu reveal">
+          <h3>FORMACIÓN ACADÉMICA</h3>
+          <div class="edu__grid">
+            <article><img src="assets/icons/clapper.png" alt=""><div><h4>ANIMACIÓN Y POSTPRODUCCIÓN AUDIOVISUAL</h4><p>Formación universitaria en animación y postproducción audiovisual.</p><i></i></div></article>
+            <article><img src="assets/icons/pen.png" alt=""><div><h4>DISEÑO GRÁFICO</h4><p>Estudiante de Diseño Gráfico, actualmente en formación.</p><i></i></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 CONTACTO -->
+    <section class="page" data-page="contacto" aria-label="Contacto" hidden>
+      <div class="contact">
+        <h2 class="contact__title reveal">Comencemos<br>un proyecto</h2>
+        <p class="contact__sub reveal">Diseño gráfico · Animación · Postproducción audiovisual</p>
+        <a class="clink clink--mail reveal" href="mailto:geisongil1905@gmail.com"><img src="assets/icons/mail.png" alt=""><span><small>CORREO ELECTRÓNICO</small><b>geisongil1905@gmail.com</b></span><svg class="clink__arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-width="2"/></svg></a>
+        <hr class="contact__rule">
+        <div class="contact__row">
+          <a class="clink clink--social reveal" href="https://www.instagram.com/geison_gil" target="_blank" rel="noopener"><img src="assets/icons/instagram.png" alt=""><small>INSTAGRAM</small><b>@geison_gil</b><svg class="clink__arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-width="2"/></svg></a>
+          <a class="clink clink--social reveal" href="https://www.tiktok.com/@geissongil" target="_blank" rel="noopener"><img src="assets/icons/tiktok.png" alt=""><small>TIKTOK</small><b>@geissongil</b><svg class="clink__arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-width="2"/></svg></a>
+        </div>
+        <div class="contact__loc reveal"><small>UBICACIÓN</small><p>Bogotá/Colombia</p></div>
+      </div>
+    </section>
+
+    <!-- DETALLE DE PROYECTO (se genera en script.js) -->
+    <section class="page" data-page="proyecto" aria-live="polite" hidden><div id="projectDetail"></div></section>
+  </main>
+
+  <footer class="site-footer" aria-hidden="true">
+    <div class="marquee"><div class="marquee__track" id="marquee"></div></div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
